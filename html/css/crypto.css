@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+.crypto-app {
+    display: none;
+    height: 120%;
+    width: 100%;
+    background: linear-gradient(135deg, rgba(23,24,41,1) 0%, rgba(14,17,28,1) 30%, rgba(23,24,41,1) 65%, rgba(14,17,28,1) 100%);
+    overflow: hidden;
+}
+
+.crypto-header {
+    position: absolute;
+    width: 100%;
+    height: 9.5vh;
+    top: 0.7vh;
+    text-align: center;
+}
+
+#crypto-search-text {
+    position: absolute;
+    top: 4.7vh;
+    left: 3.5vh;
+    font-family: 'Gilroy';
+    text-transform: capitalize;
+    font-size: 2.2vh;
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+
+#crypto-search-icon {
+    position: absolute;
+    top: 8.3vh;
+    left: 20.5vh;
+    font-size: 1.5vh;
+    color: #353b42;
+    background: rgba(28, 31, 38, 1);
+    text-align: center;
+    z-index: 101;
+    width: 2vw;
+    height: 3vh;
+    padding: 1vh;
+    line-height: 1vh;
+    border-radius: 0.4rem;
+}
+
+#crypto-search {
+    display: block;
+    position: absolute;
+    background: none;
+    border: none;
+    background: none;
+    top: 7.9vh;
+    width: 77%;
+    margin: 0 auto;
+    left: -2%;
+    right: 0;
+    opacity: 1;
+    height: 4vh;
+    outline: none;
+    text-indent: 1vh;
+    z-index: 100;
+    color: whitesmoke;
+    font-family: 'Gilroy';
+    text-transform: capitalize;
+    background: rgba(11, 14, 21, 1);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.4rem;
+}
+
+.crypto-lists {
+    position: absolute;
+    width: 77.0%;
+    height: 46.5vh;
+    top: 13.8vh;
+    margin: auto;
+    left: 0;
+    right: 0;
+    overflow-y: scroll;
+}
+
+.crypto-lists::-webkit-scrollbar {
+    display: none;
+}
+
+.crypto-list {
+    padding: 4px;
+    width: 100%;
+    background: rgba(21, 24, 31, 1);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.4rem;
+    margin-bottom: 3.5%;
+}
+
+.crypto-icon {
+    position: relative;
+    line-height: 6vh;
+    left: 0vh;
+    padding-top: 1.1vh;
+    padding-bottom: 1.1vh;
+    padding-left: 1.6vh;
+    padding-right: 2.6vh;
+    color: white;
+    font-size: 4.0vh;
+    transition: .05s linear;
+}
+
+.crypto-vehicle:hover {
+    background-color: #0d1218c0;
+}
+
+.crypto-label {
+    position: absolute;
+    left: 7.2vh;
+    color: white;
+    line-height: 3vh;
+    font-size: 1.4vh;
+}
+
+.crypto-value {
+    position: absolute;
+    left: 7.2vh;
+    color: white;
+    line-height: 8vh;
+    font-size: 1.2vh;
+}
+
+.crypto-block {
+    padding: 0 18px;
+    /*line-height: 5vh;*/
+    display: none;
+    overflow: hidden;
+    background-color: rgba(44, 70, 95, 0);
+    margin-bottom: 1.4vh;
+}
+
+/* Click Block CSS */
+
+.crypto-abbrev {
+    padding: 1vh 18px;
+    padding-left: 1vh;
+    color: white;
+    font-size: 1.3vh;
+    background: rgba(11, 14, 21, 1);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.4rem;
+    margin-bottom:1vh;
+}
+
+.crypto-abbrev > i {
+    padding-right: 0.8vh;
+    font-size: 1.3vh;
+    color: white;
+}
+
+.crypto-extralabel {
+    padding: 1vh 18px;
+    padding-top: 0.5vh;
+    padding-left: 1vh;
+    color: white;
+    font-size: 1.3vh;
+    background: rgba(11, 14, 21, 1);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.4rem;
+    margin-bottom:1vh;
+}
+
+.crypto-extralabel > i {
+    padding-right: 0.8vh;
+    font-size: 1.3vh;
+    color: white;
+}
+
+.crypto-current {
+    padding: 1vh 18px;
+    padding-top: 0.5vh;
+    padding-left: 1vh;
+    color: white;
+    font-size: 1.3vh;
+    background: rgba(11, 14, 21, 1);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.4rem;
+    margin-bottom:1vh;
+}
+
+.crypto-current > i {
+    padding-right: 0.8vh;
+    font-size: 1.3vh;
+    color: white;
+}
+
+.crypto-cost {
+    padding: 1vh 18px;
+    padding-top: 0.5vh;
+    padding-left: 1vh;
+    color: white;
+    font-size: 1.3vh;
+    background: rgba(11, 14, 21, 1);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.4rem;
+    margin-bottom: 7%;
+}
+
+.crypto-cost > i {
+    padding-right: 0.8vh;
+    font-size: 1.3vh;
+    color: white;
+}
+
+.crypto-box {
+    transition: 0.25s;
+    border-radius: .4rem;
+    color: rgb(255, 255, 255);
+    font-family: 'Gilroy';
+    text-transform: capitalize;
+    font-size: 1.1vh;
+    margin-bottom: 4%;
+}
+
+.box-exchange{
+    background:#f6a167;
+    padding: 2.0%;
+}
+
+.box-purchase{
+    background:#90e278;
+    padding: 2.0%;
+}
+
+.box-sell{
+    background:#f6a167;
+    padding: 2.0%;
+}

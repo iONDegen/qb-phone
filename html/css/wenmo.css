@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+.wenmo-app {
+    display: none;
+    height: 108%;
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(158deg, rgba(24,25,46,1) 0%, rgba(15,18,27,1) 32%, rgba(24,25,46,1) 68%, rgba(15,18,27,1) 100%);
+}
+
+.wenmo-app::before {
+    content: "";
+    position: absolute;
+    top: -12vh;
+    left: -9vh;
+    width: 50%;
+    height: 25%;
+    z-index: 1;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2vh rgba(57, 159, 242, 0.5),
+    0 0 0 4vh rgba(57, 205, 242, 0.25),
+    0 0 0 6vh rgba(57, 190, 242, 0.1);
+}
+
+.wenmo-counter {
+    display: block;
+    height: 3vh;
+    width: 53%;
+    background: rgba(11, 14, 21, 1);
+    border-radius: .2rem;
+    margin-top: 4.7vh;
+    margin-left: 1.5vh;
+    color: white;
+    font-size: 1.2vh;
+    font-family: 'Gilroy';
+    font-weight: bolder;
+    line-height: 3vh;
+    text-indent: .5vh;
+}
+
+.wenmo-count {
+    font-family: 'Gilroy';
+    margin-left: .6vh;
+     font-size: 1.2vh;
+     color: #FFFFFF;
+     font-weight: bolder;
+ }
+
+.wenmo-header-block {
+    position: absolute;
+    height: 10vh;
+    width: 78%;
+    background: linear-gradient(90deg, rgb(117, 230, 250) -50%, rgb(57, 76, 242)60%, rgb(221, 239, 255) 150%);
+    margin-top: 25%;
+    margin-left: 10.5%;
+    border-radius: .4rem;
+}
+
+.wenmo-header {
+    position: absolute;
+    width: 86%;
+    height: 10%;
+    left: 1.5%;
+    right: 0;
+    color: white;
+    font-size: 2.4vh;
+    font-family: 'Gilroy';
+    text-transform: capitalize;
+    font-weight: bolder;
+    top: -25%;
+}
+
+.wenmo-header > p {
+    line-height: 12vh;
+    text-indent: 2vh;
+    margin: 0 0 0 -1vh;
+}
+
+.wenmo-header > span {
+    position: absolute;
+    top: 8vh;
+    left: 9vh;
+    font-size: 1.2vh;
+    height: 2vh;
+    color: white;
+}
+
+.wenmo-list {
+    position: absolute;
+    width: 80%;
+    height: 64%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 3%;
+    border-radius: .5vh;
+    overflow-y: scroll;
+}
+
+.wenmo-list::-webkit-scrollbar {
+    display: none;
+}
+.wenmo-send-money-btn{
+    position: absolute;
+    transition: all 0.2s ease 0s;
+    display: inline;
+    top: 377%;
+    left: 88%;
+    background: linear-gradient(0deg, rgb(18, 68, 115) 0%, rgb(15, 86, 133)50%, rgb(18, 71, 115)00%);
+    color: #00aeff;
+    text-align: center;
+    padding: 0.5vh;
+    padding-left: 0.5vh;;
+    padding-bottom: 0.35vh;
+    width: 2.1vw;
+    font-size: 1.8vh;
+    border-radius: .4rem;
+}
+
+.wenmo-send-money-btn:hover{
+    color: rgb(187, 187, 187);
+}
+
+.wenmo-form-style-body{
+    width: 95%;
+    background: #2e2e3a;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 6% 6%;
+    border-radius: .4rem;
+    margin-top: 1.5vh;
+    margin-left: 2.8%
+}
+
+.wenmo-time-class-body {
+    display: inline;
+    float: right;
+    color: whitesmoke;
+    font-family: 'Gilroy';
+    text-transform: capitalize;
+    font-size: 1.1vh;
+    font-weight: 500;
+}

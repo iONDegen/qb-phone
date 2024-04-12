@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+.debt-app {
+    display: none;
+    height: 108%;
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(158deg, rgba(24,25,46,1) 0%, rgba(15,18,27,1) 32%, rgba(24,25,46,1) 68%, rgba(15,18,27,1) 100%);
+}
+
+.debts-header {
+    position: absolute;
+    width: 100%;
+    height: 12vh;
+    top: 0;
+    color: white;
+    /* font-family: 'Poppins', sans-serif; */
+    font-size: 1.8vh;
+}
+
+.debts-list {
+    position: absolute;
+    width: 80.0%;
+    height: 46.5vh;
+    top: 10.8vh;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    overflow-y: scroll;
+}
+
+.debts-list::-webkit-scrollbar {
+    display: none;
+}
+
+.debt-list {
+    padding: 4px;
+    width: 100%;
+    background-color: rgb(44, 70, 95);
+    border-radius: 4px 4px 0px 0px;
+    border-bottom: .1vh solid #fff;
+    margin-bottom: 3.5%;
+}
+
+/* ASSET FEES */
+
+.debt-icon {
+    position: relative;
+    line-height: 6vh;
+    left: 0vh;
+    padding-top: 1.1vh;
+    padding-bottom: 1.1vh;
+    padding-left: 1.3vh;
+    padding-right: 2.6vh;
+    color: white;
+    font-size: 4.0vh;
+    transition: .05s linear;
+}
+
+.debt-main-title {
+    position: absolute;
+    left: 6.8vh;
+    color: white;
+    line-height: 8.5vh;
+    font-size: 1.2vh;
+}
+
+.debt-main-fee {
+    position: absolute;
+    left: 6.8vh;
+    color: white;
+    line-height: 3vh;
+    font-size: 1.2vh;
+}
+
+.debt-remaining-payments {
+    position: absolute;
+    right: 1.0vh;
+    color: white;
+    line-height: 8.5vh;
+    font-size: 1.3vh;
+}
+
+/* Click Block CSS */
+
+.debt-block {
+    padding: 0 18px;
+    /*line-height: 5vh;*/
+    display: none;
+    overflow: hidden;
+    background-color: rgb(44, 70, 95);
+    margin-bottom: 1.4vh;
+}
+
+.debt-title {
+    padding: 3px 18px;
+    padding-top: 0.5vh;
+    padding-left: 0vh;
+    color: white;
+    font-size: 1.3vh;
+    border-bottom: .1vh solid #fff;
+}
+
+.debt-title > i {
+    padding-right: 0.8vh;
+    font-size: 1.3vh;
+    color: white;
+}
+
+.debt-extrainfo {
+    padding: 3px 18px;
+    padding-top: 0.5vh;
+    padding-left: 0vh;
+    color: white;
+    font-size: 1.3vh;
+    border-bottom: .1vh solid #fff;
+}
+
+.debt-extrainfo > i {
+    padding-right: 0.8vh;
+    font-size: 1.3vh;
+    color: white;
+}
+
+.debt-due {
+    padding: 3px 18px;
+    padding-top: 0.5vh;
+    padding-left: 0vh;
+    color: white;
+    font-size: 1.3vh;
+    border-bottom: .1vh solid #fff;
+    margin-bottom: 7%;
+}
+
+.debt-due > i {
+    padding-right: 0.8vh;
+    font-size: 1.3vh;
+    color: white;
+}
+
+.debt-box {
+    transition: 0.25s;
+    border-radius: 5px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1vh;
+    margin-bottom: 4%;
+}
+
+.send-all-box{
+    background:#90e278;
+    padding: 4.0%;
+}
+
+.send-minimum-box{
+    background:#f6a167;
+    padding: 4.0%;
+}
+
+/* SEARCH SHIT */
+
+#debt-search {
+    display: block;
+    position: absolute;
+    background: none;
+    border: none;
+    background: none;
+    top: 9.3vh;
+    width: 77%;
+    margin: 0 auto;
+    left: -2%;
+    right: 0;
+    opacity: 1;
+    height: 4vh;
+    outline: none;
+    text-indent: 1vh;
+    z-index: 100;
+    font-family: 'Gilroy';
+    text-transform: capitalize;
+    color: whitesmoke;
+    background: rgba(11, 14, 21, 1);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: .4rem;
+}
+
+#debt-search-icon {
+    position: absolute;
+    top: 9.8vh;
+    left: 19.5vh;
+    font-size: 1.5vh;
+    color: #FFFFFF;
+    color: #353b42;
+    background: rgba(28, 31, 38, 1);
+    text-align: center;
+    width: 2vw;
+    height: 3vh;
+    padding: 1vh;
+    line-height: 1vh;
+    border-radius: 0.4rem;
+    z-index: 101;
+}

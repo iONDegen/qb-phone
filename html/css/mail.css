@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+.mail-app {
+    display: none;
+    height: 108%;
+    width: 100%;
+    background: linear-gradient(158deg, rgba(24,25,46,1) 0%, rgba(15,18,27,1) 32%, rgba(24,25,46,1) 68%, rgba(15,18,27,1) 100%);
+    overflow: hidden;
+}
+
+.mail-app::before {
+    content: "";
+    position: absolute;
+    top: -12vh;
+    left: -9vh;
+    width: 50%;
+    height: 25%;
+    z-index: 1;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2vh rgba(242, 57, 84, 0.5),
+    0 0 0 4vh rgba(242, 57, 84, 0.25),
+    0 0 0 6vh rgba(242, 57, 84, 0.1);
+}
+
+.mail-home {
+    position: relative;
+    left: 0;
+}
+
+#mail-search-text {
+    position: absolute;
+    top: 1.3vh;
+    left: 5.0vh;
+   font-family: 'Gilroy';
+    font-size: 2.2vh;
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+
+#mail-text {
+    position: absolute;
+    top: 11.3vh;
+    left: 3.5vh;
+   font-family: 'Gilroy';
+    font-size: 2.2vh;
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+
+
+#mail-header-icon {
+    position: absolute;
+    top: 3.8vh;
+    left: 19.5vh;
+    font-size: 2.5vh;
+    color: #ffffff;
+    text-align: center;
+    z-index: 101;
+    width: 2vw;
+    height: 3vh;
+    padding: 1vh;
+    line-height: 1vh;
+}
+
+.mail-counter {
+    display: block;
+    height: 3vh;
+    width: 35%;
+    background: rgba(11, 14, 21, 1);
+    border-radius: .2rem;
+    margin-top: -5.7vh;
+    margin-left: 5vh;
+    color: white;
+    font-size: 1.2vh;
+    font-family: 'Gilroy';
+    font-weight: bolder;
+    line-height: 3vh;
+    text-indent: .5vh;
+}
+
+.mail-count {
+    font-family: 'Gilroy';
+    margin-left: .6vh;
+     font-size: 1.2vh;
+     color: #FFFFFF;
+     font-weight: bolder;
+ }
+
+.mail-header {
+    display: block;
+    height: 10vh;
+    width: 74%;
+    background: linear-gradient(90deg, rgba(250,117,143,1) -50%, rgba(242,57,84,1) 60%, rgba(254,239,229,1) 150%);
+    margin-top: 25%;
+    margin-left: 12%;
+    border-radius: .4rem;
+}
+
+.mail-list {
+    position: absolute;
+    width: 77.0%;
+    height: 46.5vh;
+    top: 14.8vh;
+    margin: auto;
+    left: 0;
+    right: 0;
+    overflow-y: scroll;
+}
+
+.mail-list::-webkit-scrollbar {
+    display: none;
+}
+
+.mail {
+    padding: 4px;
+    width: 100%;
+    font-family: 'Gilroy';
+    text-transform: capitalize;
+    background: #2e2e3a;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 3.5%;
+    border-radius: .4rem;
+}
+
+.mail-sender {
+    padding-top: 1.8vh;
+    padding-left: 0.5vh;
+    font-size: 1.4vh;
+    color: white;
+    left: 0.8vh;
+    font-weight: 500;
+}
+
+.mail-subject {
+    padding-left: 0.5vh;
+    font-size: 1.2vh;
+    color: white;
+    max-width: 21vh;
+    width: 21vh;
+    font-weight: 500;
+}
+
+.mail-message {
+    padding-left: 0.5vh;
+    font-size: 1.1vh;
+    color: white;
+    max-width: 21vh;
+    margin-bottom: 7%;
+    font-weight: 400;
+}
+
+.mail-time {
+    margin-top: 0.7vh;
+    font-size: 1.15vh;
+    color: white;
+    width: 100%;
+    text-align: right;
+    font-weight: bold;
+}
+
+#mail-search {
+    display: block;
+    position: absolute;
+    background: none;
+    border: none;
+    background: none;
+    top: 9.3vh;
+    width: 77%;
+    margin: 0 auto;
+    left: -2%;
+    right: 0;
+    opacity: 1;
+    height: 4vh;
+    outline: none;
+    text-indent: 1vh;
+    z-index: 100;
+    color: whitesmoke;
+    background: rgba(11, 14, 21, 1);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: .4rem;
+}
+
+.nomails {
+    text-align: center;
+    font-family: 'Gilroy';
+    text-transform: capitalize;
+    font-size: 1.7vh;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 20vh;
+}
+
+#mail-frown {
+    position: absolute;
+    top: 3.5%;
+    left: 41.5%;
+    font-size: 275%;
+    color: #FFFFFF;
+}
+
+.mail-block {
+    padding: 0 9px;
+    display: none;
+    overflow: hidden;
+    background: rgba(21, 24, 31, 0);
+    margin-bottom: 1.4vh;
+}
+
+.mail-box {
+    transition: 0.25s;
+    border-radius: 5px;
+    color: black;
+    font-size: 1.2vh;
+    margin-bottom: 2%;
+    margin-right: -1%;
+    text-align: right;
+}
+
+.mail-delete{
+    background: #21212b;
+    padding: 3.0%;
+}

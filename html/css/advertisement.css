@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+
+
+* {
+    --main-background: #1d1f3c;
+    --main-second-background: #151524;
+    --main-dark-bg: #0a0a10;
+}
+
+
+/* Advert App */
+
+.advert-app {
+    display: none;
+    height: 108%;
+    width: 100%;
+    overflow: hidden;
+    background-image: url("../img/backgrounds/yellow-pages.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.advert-home {
+    position: relative;
+    left: 0;
+}
+#advert-search-text {
+    position: absolute;
+    text-align: center;
+    top: 3vh;
+    padding-left:1.5vh;
+    font-size: 2.3vh;
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+.advert-home-desc {
+    position: absolute;
+    text-align: left;
+    top: 6vh;
+    padding-left:2vh;
+    font-size: 1.2vh;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.advert-header {
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    top: 0;
+}
+
+.advert-list {
+    position: absolute;
+    width: 100%;
+    top:10vh;
+    height: 48.5vh;
+    overflow-x: hidden !important;
+    overflow-y: scroll;
+}
+
+.advert-list::-webkit-scrollbar {
+    display: none;
+}
+
+/* NEW SHIT */
+
+.advert {
+    margin-top: 3vh;
+    position: relative;
+    height: auto;
+    width: 85%;
+    margin-bottom: 1.0vh;
+    background-color: #f7e95f;
+    left: 2vh;
+    color: rgb(0, 0, 0);
+    border-radius:0.5vh;
+}
+
+.advert-message {
+    margin-top: -1.5vh;
+    font-size: 1.5vh;
+    font-weight: 400;
+    text-align: left;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    padding: .8vh;
+    font-family: 'Gilroy';
+}
+
+.advert-message > span {
+    position: relative;
+    font-family: 'Gilroy';
+    font-size: 1.6vh;
+    top: .1vh;
+}
+
+.advert-contact-info {
+    font-size: 1.5vh;
+    font-weight: 600;
+    text-align: center;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    padding: .5vh;
+    font-family: 'Gilroy';
+    border-bottom: .1vh solid rgb(0, 0, 0);
+    
+}
+#advert-call {
+    color: #fff;
+    z-index: 101;
+    background: #1c1f26;
+    padding: 0.4vh;
+    border-radius: 0.3vh;
+    margin-right:10px;
+}
+.advert-contact-info-name {
+    font-size: 1.5vh;
+    font-weight: 600;
+    text-align: left;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    padding: .8vh;
+    font-family: 'Gilroy';
+}
+
+.advert-image-attached {
+    margin-top: .5vh;
+    padding-left: 0.8vh;
+    font-size: 1.3vh;
+    bottom: 40vh;
+    padding-bottom: 2.5vh;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.advert-flag {
+    position: absolute;
+    left: 17.5vh;
+    bottom: -1vh;
+    transition: .05 linear;
+    pointer-events: all;
+    width: 2.5vh;
+    height: 2.5vh;
+    z-index: 101;
+    border-radius: 0.5vh;
+    text-align: center;
+    transition: .2s;
+    background: linear-gradient(0deg, rgba(18,115,92,1) 0%, rgba(15,133,105,1) 50%, rgba(18,115,92,1) 100%);
+}
+.advert-flag > i {
+    line-height: 2.5vh;
+    font-size: 1vh;
+    color: #00FFCC;
+}
+.advert-flag:hover i {
+    color: #fff;
+}
+
+.advert-trash {
+    position: absolute;
+    left: 20.5vh;
+    bottom: -1vh;
+    transition: .05 linear;
+    pointer-events: all;
+    width: 2.5vh;
+    height: 2.5vh;
+    z-index: 101;
+    border-radius: 0.5vh;
+    text-align: center;
+    transition: .2s;
+    background: linear-gradient(0deg, rgb(141, 23, 23) 0%, rgb(155, 19, 19) 50%, rgb(141, 23, 23) 100%);
+}
+.advert-trash > i {
+    line-height: 2.5vh;
+    font-size: 1vh;
+    color: #ff5353;
+}
+.advert-trash:hover i {
+    color: #fff;
+}
+
+.create-advert {
+    position: absolute;
+    bottom: 0;
+    top: 2vh;
+    right: 0%;
+    width: 3.5vh;
+    height: 3.5vh;
+    margin: 2.2vh;
+    z-index: 101;
+    border-radius: 0.5vh;
+    text-align: center;
+    transition: .2s;
+    background: linear-gradient(180deg, rgb(204, 195, 67) 0%, rgb(241, 233, 124) 100%);
+}
+
+/* .create-advert:hover {
+    transition: .1s ease-in-out;
+} */
+.create-advert > i {
+    line-height: 3.5vh;
+    font-size: 2vh;
+    color: white;
+}
+
+/* .create-advert:hover .test-icon {
+    color: #2c465f;
+    transition: .1s ease-in-out;
+} */
+
+#advert-new-url{
+    position: absolute;
+    height: 4vh;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    background-color: rgba(23, 23, 23, 90%);
+    outline: none;
+    resize: none;
+    /* font-family: 'Gilroy'; */
+    padding: 0.87vh;
+    font-size: 1.4vh;
+    top: 45vh;
+    width: 22vh;
+    border-radius: 7px;
+    color: white;
+    border: 2px solid rgb(255, 154, 46);
+}
+
+/*Search Area */
+
+#advert-search {
+    display: block;
+    position: absolute;
+    background: rgb(11, 14, 21);
+    border: none;
+    top: 8.5vh;
+    width: 86%;
+    margin: 0 auto;
+    left: -2%;
+    right: 0;
+    opacity: 1;
+    height: 4vh;
+    border-radius: 0.5vh;
+    outline: none;
+    text-indent: .8vh;
+    z-index: 100;
+    color: #FFFFFF;
+}
+
+#advert-search-icon {
+    float: right;
+    color: #34373e;
+    position: absolute;
+    right: 3.5vh;
+    top: 9.3vh;
+    z-index: 101;
+    background: #1c1f26;
+    padding: 0.5vh;
+    border-radius: 0.3vh;
+}
+
+#advert-new-url::-webkit-scrollbar {
+    display: none;
+}
+
+/* Advertisements Image Block */
+
+.advert-block {
+    display: block;
+    position: relative;
+    left: 1.0vh;
+    width: 22.0vh;
+    height: 12.5vh;
+    bottom: 3.0vh;
+    outline: 1.5px ridge rgb(0, 0, 0);
+    background-color: #f7e95f;
+    cursor: pointer;
+}
+
+.advert-eye {
+    position: absolute;
+    bottom: 6.5vh;
+    color: rgb(0, 0, 0);
+    font-size: 3.9vh;
+    width:100%;
+    text-align:center;
+}
+
+.advert-image-text {
+    position: absolute;
+    bottom: 5.4vh;
+    width:100%;
+    text-align:center;
+    color: rgb(0, 0, 0);
+    font-size: 1.5vh;
+    font-family: 'Gilroy';
+}
+
+.advert-image-text-other {
+    position: absolute;
+    top: 7.2vh;
+    width:100%;
+    text-align:center;
+    color: rgb(0, 0, 0);
+    font-size: 1.2vh;
+    text-align: center;
+    font-family: 'Gilroy';
+}
+
+.noadverts {
+    text-align: center;
+    font-family: 'Gilroy';
+    font-size: 1.7vh;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 20vh;
+}
+
+#advert-frown {
+    position: absolute;
+    top: 5.5%;
+    left: 41.5%;
+    font-size: 275%;
+    color: #FFFFFF;
+}
+
+.advert-box-textt-input{
+    display: block;
+    position: absolute;
+    background: rgb(11, 14, 21);
+    border: none;
+    width: 90%;
+    margin: 0 auto;
+    left: -2%;
+    right: 0;
+    opacity: 1;
+    height: auto;
+    border-radius: 0.5vh;
+    outline: none;
+    text-indent: .5vh;
+    z-index: 100;
+    color: #FFFFFF;
+    height: 10vh;
+} 
+
+.advert-box-image-input{
+    display: block;
+    position: absolute;
+    background: rgb(11, 14, 21);
+    border: none;
+    width: 90%;
+    margin: 0 auto;
+    left: -2%;
+    right: 0;
+    opacity: 1;
+    height: auto;
+    border-radius: 0.5vh;
+    outline: none;
+    text-indent: .5vh;
+    z-index: 100;
+    color: #FFFFFF;
+    height: 3vh;
+    top:15vh;
+}

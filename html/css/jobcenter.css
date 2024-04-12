@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.job-app {
+    display: none;
+    height: 120%;
+    width: 100%;
+    background-image: url('../img/backgrounds/job-center.png');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.job-header {
+    position: absolute;
+    width: 90%;
+    height: 10%;
+    top: 5%;
+    left: 0;
+    color: white;
+    font-size: 2.5vh;
+    font-family: 'Gilroy';
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.job-header > p {
+    text-align: center;
+    line-height: 12vh;
+    text-indent: 2vh;
+  /*   margin: 0 0 0 9vh; */
+}
+
+.job-header > span {
+    position: absolute;
+    top: 8vh;
+    left: 5vh;
+    font-size: 1.2vh;
+    height: 2vh;
+    color: white;
+}
+
+.job-list {
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 25%;
+    border-radius: .5vh;
+    overflow-y: scroll;
+}
+
+.job-list::-webkit-scrollbar {
+    display: none;
+}
+
+.job-class-body-job{
+    display: flex;
+    color: whitesmoke;
+    background: linear-gradient(90deg, rgba(23,98,114, 0.7) 0%, rgba(9,38,51,0.4) 120%);
+    transition: 0.2s;
+    width: 95%;
+    padding: 2%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    border-radius: .4rem;
+    height: 5vh;
+    font-family: 'Gilroy';
+    text-transform: capitalize;
+    font-weight: 500;
+    text-align: center;
+    align-items: center;
+}
+
+.job-class-body-job:hover{
+    background: #0d1218c0;
+}
+
+.job-showitems-other{
+    margin-left: 70%;
+    position: absolute;
+    display: block;
+}
+
+.job-title {
+    font-size: 14px;
+}
+
+#job-icon-class2 {
+    margin-left: 30%;
+    font-size: 275%;
+    color: whitesmoke;
+}
+
+#job-icon-class {
+    padding-left: 1.3vh;
+    font-size: 140%;
+}
+
+.job-class-body-job:hover .job-showitems-other{
+    visibility: visible;
+}
+
+#job-icon-class:hover{
+    color: #8ee074;
+}
+
+.job-icon {
+    background-color: #15586d;
+    padding: 0.5vh;
+    width: 2vw;
+    border-radius: .4rem;
+    display: inline-block; /* or flex */
+    vertical-align: middle;
+    margin-right: 10px; /* add this line */
+}
+
+.job-icon i {
+    color: #ffffff;
+}

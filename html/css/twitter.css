@@ -1,0 +1,491 @@
+@import "https://assets.nopixel.net/web/fonts/gilroy/stylesheet.css";
+@import "https://assets.nopixel.net/web/fonts/gilroy/stylesheet.css";
+
+.twitter-app {
+    display: none;
+    height: 108%;
+    width: 100%;
+    background: linear-gradient(158deg, rgba(24,25,46,1) 0%, rgba(15,18,27,1) 32%, rgba(24,25,46,1) 68%, rgba(15,18,27,1) 100%);
+    overflow: hidden;
+}
+
+.twitter-home-tab {
+    display: block;
+    position: absolute;
+    height: 70%;
+    width:100%;
+    top: 14vh;
+    overflow: hidden;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+}
+
+.twitter-home-tab::-webkit-scrollbar {
+    width: .7vh;
+}
+
+.twitter-home-tab::-webkit-scrollbar-thumb {
+    display: 'none';
+}
+
+.twitter-home-tab::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.twitter-mentions-tab {
+    display: none;
+    position: absolute;
+    height: 75%;
+    width: 100%;
+    top: 12vh;
+    overflow: hidden;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+}
+
+.twitter-tweet {
+    position: relative;
+    height: 50px;
+    background: rgb(123,171,248);
+    background: linear-gradient(0deg, rgba(123,171,248,1) 0%, rgba(66,120,207,1) 100%);
+    border-radius: 5px 5px 0px 0px;
+    margin: 0.8vh 1.5vh;
+    color: white;
+    margin-bottom:-10px
+}
+
+.tweet-top{
+    position: relative;
+    height: 50px;
+    background: rgb(123,171,248);
+    background: linear-gradient(0deg, rgba(123,171,248,1) 0%, rgba(66,120,207,1) 100%);
+    border-radius: 5px 5px 0px 0px;
+    margin: 0.8vh 1.5vh;
+    color: white;
+    margin-bottom:-10px
+}
+
+.postingan {
+    position: relative;
+    height: auto;
+    background: rgb(11, 14, 21);
+    border-radius: 0px 0px 5px 5px;
+    margin: 0.8vh 1.5vh;
+    color: white;
+    margin-bottom:1.5vh;
+}
+
+.tweet-reply {
+    position: absolute;
+    left: 14.5vh;
+    bottom: -1vh;
+    transition: .05 linear;
+    pointer-events: all;
+    width: 2.5vh;
+    height: 2.5vh;
+    z-index: 101;
+    border-radius: 0.5vh;
+    text-align: center;
+    transition: .2s;
+    background: linear-gradient(0deg, rgba(216,137,64,1) 0%, rgba(246,172,104,1) 50%, rgba(216,137,64,1) 100%);
+}
+
+.tweet-reply > i {
+    line-height: 2.5vh;
+    font-size: 1vh;
+    color: #B66627;
+}
+
+.tweet-reply:hover i {
+    color: #fff;
+}
+
+.tweet-retweet {
+    position: absolute;
+    left: 17.5vh;
+    bottom: -1vh;
+    transition: .05 linear;
+    pointer-events: all;
+    width: 2.5vh;
+    height: 2.5vh;
+    z-index: 101;
+    border-radius: 0.5vh;
+    text-align: center;
+    transition: .2s;
+    background: linear-gradient(0deg, rgba(65,192,199,1) 0%, rgba(75,215,223,1) 50%, rgba(65,192,199,1) 100%);
+}
+
+.tweet-retweet > i {
+    line-height: 2.5vh;
+    font-size: 1vh;
+    color: #158892;
+}
+
+.tweet-retweet:hover i {
+    color: #fff;
+}
+
+.tweet-flag {
+    position: absolute;
+    left: 20.5vh;
+    bottom: -1vh;
+    transition: .05 linear;
+    pointer-events: all;
+    width: 2.5vh;
+    height: 2.5vh;
+    z-index: 101;
+    border-radius: 0.5vh;
+    text-align: center;
+    transition: .2s;
+    background: linear-gradient(0deg, rgba(18,115,92,1) 0%, rgba(15,133,105,1) 50%, rgba(18,115,92,1) 100%);
+}
+
+.tweet-flag > i {
+    line-height: 2.5vh;
+    font-size: 1vh;
+    color: #00FFCC;
+}
+
+.tweet-flag:hover i {
+    color: #fff;
+}
+
+.tweet-trash {
+    position: absolute;
+    left: 20.5vh;
+    bottom: -1vh;
+    transition: .05 linear;
+    pointer-events: all;
+    width: 2.5vh;
+    height: 2.5vh;
+    z-index: 101;
+    border-radius: 0.5vh;
+    text-align: center;
+    transition: .2s;
+    background: linear-gradient(0deg, rgb(141, 23, 23) 0%, rgb(155, 19, 19) 50%, rgb(141, 23, 23) 100%);
+}
+
+.tweet-trash > i {
+    line-height: 2.5vh;
+    font-size: 1vh;
+    color: #ff5353;
+}
+
+.tweet-trash:hover i {
+    color: #fff;
+}
+
+.tweet-time {
+    position: absolute;
+    left: 10px;
+    color: rgb(255, 255, 255);
+    transition: .05 linear;
+    font-family: 'Gilroy';
+    font-size: 1.0vh;
+    z-index: 100;
+}
+
+.tweet-tweeter {
+    padding-left: 0.5vh;
+    padding-top: .6vh;
+    font-family: 'Gilroy';
+    font-size: 1.4vh;
+    font-weight: 500;
+}
+
+.tweet-tweeter > span {
+    position: relative;
+    font-family: 'Gilroy';
+    font-size: 1.4vh;
+    font-weight: 500;
+    top: -.1vh;
+}
+
+.tweet-message {
+    margin-top: .5vh;
+    padding-left: 0.8vh;
+    padding-top: .5vh;
+    font-size: 1.2vh;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.tweet-image-attached {
+    padding-left: 0.8vh;
+    font-size: 1.3vh;
+    padding-bottom: 2.5vh;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.twitter-new-tweet {
+    position: absolute;
+    bottom: 0;
+    top: 3%;
+    right: 3%;
+    width: 3.5vh;
+    height: 3.5vh;
+    margin: 2.2vh;
+    z-index: 101;
+    border-radius: 0.5vh;
+    text-align: center;
+    transition: .2s;
+    background: linear-gradient(180deg, rgba(67,120,204,1) 0%, rgba(124,166,241,1) 100%);
+}
+
+.twitter-footer {
+    position: relative;
+    height: 4.5vh;
+    width: 100%;
+    background-color: transparent;
+}
+
+.twitter-footer > p {
+    padding-top: 1.3vh;
+    padding-left: 2vh;
+    color: white;
+    font-family: 'Gilroy';
+    font-size: 1.5vh;
+}
+
+#twitter-search-text {
+    position: absolute;
+    top: 5.3vh;
+    left: 2.0vh;
+   font-family: 'Gilroy';
+    font-size: 2.2vh;
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+
+#twitter-search {
+    display: block;
+    position: absolute;
+    background: rgb(11, 14, 21);
+    border: none;
+    top: 8.5vh;
+    width: 86%;
+    margin: 0 auto;
+    left: -2%;
+    right: 0;
+    opacity: 1;
+    height: 4vh;
+    border-radius: 0.5vh;
+    outline: none;
+    text-indent: .8vh;
+    z-index: 100;
+    color: #FFFFFF;
+}
+
+#twitter-search-icon {
+    float: right;
+    color: #34373e;
+    position: absolute;
+    right: 3.5vh;
+    top: 9.3vh;
+    z-index: 101;
+    background: #1c1f26;
+    padding: 0.5vh;
+    border-radius: 0.3vh;
+}
+
+.twitter-new-tweet > i {
+    line-height: 3.5vh;
+    font-size: 2vh;
+    color: white;
+}
+
+.twitter-new-tweet-tab {
+    display: none;
+    position: absolute;
+    display: block;
+    top: -100%;
+    height: 100%;
+    width: 100%;
+    background: rgb(36, 36, 36);
+    overflow: hidden;
+    z-index: 105;
+}
+
+/* TWITTER IMAGE BLOCK */
+
+.tweet-block {
+    display: block;
+    position: relative;
+    width: 90%;
+    left:1.3vh;
+    height: 11.5vh;
+    bottom: 3.0vh;
+    outline: 1.5px ridge rgb(255, 255, 255);
+    background-color: rgb(11, 14, 21);
+}
+
+.tweet-eye {
+    position: absolute;
+    bottom: 6.5vh;
+    left: 8.5vh;
+    color: #ffffff;
+    font-size: 3.9vh;
+}
+
+.tweet-image-text {
+    position: absolute;
+    bottom: 5.4vh;
+    left: 6.5vh;
+    color: rgb(255, 255, 255);
+    font-size: 1.5vh;
+    font-family: 'Gilroy';
+}
+
+.tweet-image-text-other {
+    position: absolute;
+    top: 7.2vh;
+    left: 1.5vh;
+    color: rgb(255, 255, 255);
+    font-size: 1.2vh;
+    text-align: center;
+    font-family: 'Gilroy';
+}
+
+.tweet-anonymous {
+    text-align: center;
+    color: white;
+}
+
+.twt-box-textt-input{
+    display: block;
+    position: absolute;
+    background: rgb(11, 14, 21);
+    border: none;
+    width: 90%;
+    margin: 0 auto;
+    left: -2%;
+    right: 0;
+    opacity: 1;
+    height: auto;
+    border-radius: 0.5vh;
+    outline: none;
+    text-indent: .5vh;
+    z-index: 100;
+    color: #FFFFFF;
+    height: 10vh;
+} 
+
+.twt-box-image-input{
+    display: block;
+    position: absolute;
+    background: rgb(11, 14, 21);
+    border: none;
+    width: 90%;
+    margin: 0 auto;
+    left: -2%;
+    right: 0;
+    opacity: 1;
+    height: auto;
+    border-radius: 0.5vh;
+    outline: none;
+    text-indent: .5vh;
+    z-index: 100;
+    color: #FFFFFF;
+    height: 3vh;
+    top:15vh;
+} 
+
+.tweet-menu-body {
+    display: none;
+    position: absolute;
+    height: 50%;
+    width: 95%;
+    background: linear-gradient(158deg, rgba(24,25,46,1) 0%, rgba(15,18,27,1) 32%, rgba(24,25,46,1) 68%, rgba(15,18,27,1) 100%);
+    box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.247);
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 8.5vh;
+    border-radius: 0.5vh;
+    overflow: hidden;
+    z-index: 700;
+    border: 1px solid rgba(123,171,248,1);
+    overflow: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.5vh;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 1vh;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(123,171,248,1);
+  border-radius: 10px;
+}
+.button {
+    border: none;
+    padding: 1vh;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2vh;
+    border-radius: 0.5vh;
+    width: 6vh;
+    font-weight: 600;
+}
+.button:hover {
+    color: #fff;
+}
+.tweet-btn-cancel {
+    background: linear-gradient(0deg, rgb(141, 23, 23) 0%, rgb(155, 19, 19) 50%, rgb(141, 23, 23) 100%);
+    color: #ff5353;
+}
+.tweet-btn-post {
+    background: linear-gradient(0deg, rgba(18,115,92,1) 0%, rgba(15,133,105,1) 50%, rgba(18,115,92,1) 100%);
+    color: #00FFCC;
+}
+  .tweet-menu-main {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 1vh;
+    left: 50%;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    width: 100%;
+    border-radius: .5vh;
+}
+  .tweet-menu-text {
+    font-size: 1.3vh;
+}
+  .center {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display:block;
+  }
+
+  .button-group{
+    width: 100%;
+  }
+  
+.mdi--bird {
+    margin-top:0.1vh;
+    display: inline-block;
+    width: 3vh;
+    height: 3vh;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='m23 11.5l-3.05-1.13c-.26-1.15-.91-1.81-.91-1.81a4.189 4.189 0 0 0-5.93 0l-1.48 1.48L5 3c-1 4 0 8 2.45 11.22L2 19.5s8.89 2 14.07-2.05c2.76-2.16 3.38-3.42 3.77-4.75zm-5.29.22c-.39.39-1.03.39-1.42 0a.996.996 0 0 1 0-1.41c.39-.39 1.03-.39 1.42 0c.39.39.39 1.02 0 1.41'/%3E%3C/svg%3E");
+    background-color: #fff;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    text-align: center;
+  }

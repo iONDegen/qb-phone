@@ -1,0 +1,861 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+@media all and (max-height: 812px) {
+    :root { font-size: 13px; }
+}
+@media all and (max-height: 750px) {
+    :root { font-size: 12px; }
+}
+@media all and (max-height: 700px) {
+    :root { font-size: 11px; }
+}
+@media all and (max-height: 650px) {
+    :root { font-size: 10px; }
+}
+@media all and (max-height: 600px) {
+    :root { font-size: 9px; }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.disableSelection{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: 0;
+}
+
+.container {
+    display: none;
+    position: absolute;
+    bottom: -70%;
+    right: -6.8vh;
+}
+
+.phone-currentcall-container {
+    display: none;
+    position: absolute;
+    height: 4.3vh;
+    width: 24.5vh;
+    background-color: #2a2a2aee;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 4vh;
+    border-radius: 0.9vh;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.11);
+    z-index: 140;
+    transition: background-color .1s linear;
+    animation: pulse 2s infinite;
+}
+
+.phone-currentcall-icon-square {
+    position: absolute;
+    width: 3.0vh;
+    text-align: center;
+    border-radius: 1.5vh;
+    color: #ffffff;
+    font-size: 1.6vh;
+}
+
+.phone-currentcall-icon {
+    position: absolute;
+    width: 3.0vh;
+    text-align: center;
+    border-radius: 1.5vh;
+    color: #0b7468;
+    font-size: 1.9vh;
+}
+@-webkit-keyframes pulse {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+  }
+  @keyframes pulse {
+    0% {
+      -moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.2);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+.phone-currentcall-title {
+    position: absolute;
+    top: 0.75vh;
+    left: 2.8vh;
+    font-size: 0.9vh;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+.phone-currentcall-contact {
+    position: absolute;
+    top: 2.4vh;
+    left: 0.8vh;
+    font-size: 1vh;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+    width: 22vh;
+    overflow: hidden;
+}
+
+.phone-frame {
+    height: 62.8vh;
+    width: 29vh;
+    bottom: 30px;
+    border-radius: 5vh;
+    right: 1.7vh;
+    margin: 5vh;
+    overflow: hidden;
+    position: absolute;
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    z-index: 150;
+    pointer-events: none;
+}
+
+.phone-container {
+    height: 70.7vh;
+    width: 29vh;
+    bottom: 1vh;
+    border-radius: 3vh;
+    right: 0.5vh;
+    margin: 5vh;
+    overflow: hidden;
+    position: absolute;
+}
+
+.phone-background {
+    height: 62.7vh;
+    width: 28.0vh;
+    bottom: 30px;
+    border-radius: 5vh;
+    right: 2.0vh;
+    margin: 5vh;
+    overflow: hidden;
+    position: absolute;
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-image: url('../img/backgrounds/default-qbcore.png');
+}
+
+
+#phone-time-home {
+    font-family: 'Gilroy';
+    color: white !important;
+    font-size: 5vh;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: -1vh;
+}
+
+#phone-date-home {
+    font-family: 'Gilroy';
+    color: white !important;
+    font-size: 1.5vh;
+    text-align: center;
+    margin-bottom: 0vh;
+}
+
+.phone-header {
+    width: 100%;
+    height: 5vh;
+    z-index: 141;
+    position: absolute;
+    color: white;
+}
+
+#phone-time {
+    font-family: 'Gilroy';
+    font-size: 1.1vh;
+    padding: 1.2vh 0 0 2.5vh;
+    float: left;
+    color: white !important;
+}
+
+#player-id {
+    font-family: 'Gilroy';
+    text-transform: uppercase;
+    font-size: 1.1vh;
+    padding: 1.2vh 0 0 1vh;
+    float: left;
+    color: white !important;
+}
+
+#phone-icons {
+    font-size: 1.1vh;
+    padding: 1.2vh 2.5vh 0 0vh;
+    float: right;
+    color: white !important;
+}
+
+#phone-arrow {
+    font-size: 1.5vh;
+    top: 0.25vh;
+    left: -8.25vh;
+    position: relative;
+}
+
+#phone-sun {
+    left: -1.2vh;
+    position: relative;
+}
+
+#phone-unlock {
+    left: -0.6vh;
+    position: relative;
+}
+
+#phone-battery {
+    top: 0vh;
+    position: relative;
+}
+
+.phone-application-container {
+    display: none;
+    position: absolute;
+    top: 8%;
+    height: 93%;
+    width: 100%;
+    background-color: rgb(65, 65, 65);
+    z-index: 100;
+}
+
+.phone-footer {
+    position: absolute;
+    bottom: -0.5vh;
+    height: 5vh;
+    width: 100%;
+    background: #00000000;
+    z-index: 140;
+    border-top: 0.1vh solid #00000000;
+}
+
+.phone-home-container {
+    margin-top: 1.6vh;
+    margin-left: 9.5vh;
+    position: relative;
+}
+
+.phone-home-bar {
+    width: 6vw; /* adjust as needed */
+    height: 0.5vh; /* adjust as needed */
+    background-color: #ffffff; /* adjust color as needed */
+    box-shadow: 0 0 .5vh 0 rgba(0, 0, 0, 0.5);
+    border-radius: 0.6rem;
+}
+
+.phone-home-button-class {
+    position: relative;
+    height: 100%;
+    width: 20%;
+    text-align: center;
+    float: left;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    transition: .3s;
+}
+
+.phone-home-button-class:hover{
+    color: rgb(165, 165, 165);
+}
+
+.ghasem {
+    position: relative;
+    height: 100%;
+    width: 25%;
+    text-align: center;
+    float: left;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    transition: .1s;
+}
+
+.phone-applications {
+    position: relative;
+    height: 97%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.phone-application {
+    position: relative;
+    height: 4.8vh;
+    width: 4.8vh;
+    left: 0vh;
+    float: left;
+    margin-left: 1.75vh;
+    margin-top: 1.5vh;
+    border-radius: 0.5rem;
+    text-align: center;
+    opacity: 0.9;
+    transition: .05s;
+}
+
+.phone-application:hover {
+    opacity: 1.0;
+}
+
+.phone-footer-applications {
+    position: absolute;
+    width: 100%;
+    bottom: 5vh;
+}
+
+.phone-footer-applications-bg {
+    position: absolute;
+    width: 95%;
+    height: 120%;
+    bottom: -1.5vh;
+    left: 2.5%;
+    background: rgb(255, 255, 255, 0.2);
+    border: 1px solid rgb(150, 150, 150, 0.2);
+    border-radius: 1.2rem;
+    box-shadow: 1px -1px 84px 10px rgba(0,0,0,0.39);
+    -webkit-box-shadow: 1px -1px 84px 10px rgba(0,0,0,0.39);
+    -moz-box-shadow: 1px -1px 84px 10px rgba(0,0,0,0.39);
+}
+
+
+.phone-home-applications {
+    position: absolute;
+    width: 100%;
+    bottom: 10vh;
+}
+
+.phone-application > i {
+    line-height: 4.6vh;
+    font-size: 2vh;
+}
+
+.ApplicationIcon {
+    color: white;
+}
+
+.phone-notification-container-new {
+    position: absolute;
+    height: 4.3vh;
+    width: 24.5vh;
+    background-color: #2a2a2aee;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: -8%;
+    border-radius: 0.9vh;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.11);
+    z-index: 140;
+  }
+
+.notification-accept {
+    position: absolute;
+    top: 23px;
+    right: 15px;
+    font-size: 1.2vh;
+}    
+
+.notification-deny {
+    position: absolute;
+    top: 23px;
+    right: 35px;
+    font-size: 1.2vh;
+}
+
+.notification-icon-new {
+    position: absolute;
+    height: 50%;
+    width: 3.0vh;
+    text-align: center;
+    line-height: 2.8vh;
+    color: #ffffff;
+    font-size: 1.5vh;
+}
+
+.notification-title-new {
+    position: absolute;
+    top: 0.75vh;
+    left: 2.8vh;
+    font-size: 0.9vh;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+}
+
+.notification-text-new {
+    position: absolute;
+    top: 2.4vh;
+    left: 0.8vh;
+    font-size: 1vh;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+    max-width: 18vh;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.notification-time-new {
+    position: absolute;
+    top: 0.70vh;
+    left: 20.0vh;
+    font-size: 0.9vh;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+    width: 22vh;
+    overflow: hidden;
+}
+
+.phone-notification-container {
+    position: absolute;
+    height: 4.3vh;
+    width: 24.5vh;
+    background-color: #2a2a2aee;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: -8%;
+    border-radius: 0.9vh;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.11);
+    z-index: 140;
+  }
+
+.notification-icon {
+    position: absolute;
+    height: 50%;
+    width: 3.0vh;
+    text-align: center;
+    line-height: 2.8vh;
+    color: #ffffff;
+    font-size: 1.5vh;
+}
+
+.notification-title {
+    position: absolute;
+    top: 0.75vh;
+    left: 2.8vh;
+    font-size: 0.9vh;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+}
+
+.notification-text {
+    position: absolute;
+    top: 2.4vh;
+    left: 0.8vh;
+    font-size: 1vh;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+    max-width: 22vh;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.notification-time {
+    position: absolute;
+    top: 0.70vh;
+    left: 20.0vh;
+    font-size: 0.9vh;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+    width: 22vh;
+    overflow: hidden;
+}
+
+.call-notifications {
+    display: none;
+    position: absolute;
+    background: #e67d22ea;
+    height: 9vh;
+    width: 34vh;
+    bottom: 16vh;
+    right: -35vh;
+    border-radius: 1.7vh;
+    z-index: -5;
+}
+.call-notifications-shake {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.screen-notifications-container {
+    display: none;
+    position: absolute;
+    background: rgba(29, 160, 242, 0.9);
+    height: 9vh;
+    width: 34vh;
+    bottom: 5vh;
+    right: -35vh;
+    border-radius: 1.7vh;
+    z-index: -5;
+}
+
+.screen-notification-icon {
+    position: absolute;
+    line-height: 9.3vh;
+    left: 2vh;
+    font-size: 3.75vh;
+    color: white;
+}
+
+.screen-notification-title {
+    position: absolute;
+    line-height: 5.5vh;
+    left: 7.5vh;
+    font-size: 1.5vh;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.screen-notification-content {
+    position: absolute;
+    top: 4.2vh;
+    left: 7.5vh;
+    font-size: 1.2vh;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    height: 3.5vh;
+    width: 26vh;
+    overflow: hidden;
+}
+
+.call-notifications-icon {
+    position: absolute;
+    line-height: 9.3vh;
+    left: 2vh;
+    font-size: 3.75vh;
+    color: white;
+    transform: rotate(90deg);
+}
+
+.call-notifications-title {
+    position: absolute;
+    top: 0.75vh;
+    left: 2.8vh;
+    font-size: 0.9vh;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+.call-notifications-content {
+    position: absolute;
+    top: 4.2vh;
+    left: 7.5vh;
+    font-size: 1.2vh;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    height: 3.5vh;
+    width: 26vh;
+    overflow: hidden;
+}
+
+.app-unread-alerts {
+    position: absolute;
+    width: 2vh;
+    height: 2vh;
+    top: -.5vh;
+    left: -.5vh;
+    color: white;
+    text-align: center;
+    line-height: 2vh;
+    background: #d63031;
+    border-radius: 50%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1vh;
+}
+
+.emergency-button {
+    position: absolute;
+    right: 3vh;
+    top: 10vh;
+    width: 33vh;
+    height: 20vh;
+    background-color: #004682;
+    border-radius: 1vh;
+    overflow: hidden;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.199);
+}
+
+.emergency-button-header {
+    position: absolute;
+    background-color: #ffffff;
+    height: 3.5vh;
+    top: 0;
+    width: 100%;
+}
+
+.emergency-button-footer {
+    position: absolute;
+    background-color: #ffffff;
+    height: 2.5vh;
+    bottom: 0;
+    width: 100%;
+}
+
+.police-logo-2 {
+    position: absolute;
+    width: 6vh;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: .5vh;
+}
+
+.police-logo-3 {
+    position: absolute;
+    width: 15vh;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* Checkmark Confirmation Frame */
+
+.box-frame {
+    width: calc(100% - 64px);
+    height: auto;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    max-height: 80%;
+    min-height: 30%;
+    background-color: rgb(48, 71, 94);
+}
+
+.content-frame {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 16px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner-input-frame{
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+.checkmark-input-frame {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+.main-spinning-frame {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-spinning {
+    color: official;
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+.div-spinning div {
+    transform-origin: 40px 40px;
+    -webkit-animation: div-spinning 1.2s linear infinite;
+    animation: div-spinning 1.2s linear infinite;
+}
+.div-spinning div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 37px;
+    width: 6px;
+    height: 18px;
+    border-radius: 20%;
+    background: #fff;
+}
+.div-spinning div:first-child {
+    transform: rotate(0deg);
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+}
+.div-spinning div:nth-child(2) {
+    transform: rotate(30deg);
+    -webkit-animation-delay: -1s;
+    animation-delay: -1s;
+}
+.div-spinning div:nth-child(3) {
+    transform: rotate(60deg);
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+}
+.div-spinning div:nth-child(4) {
+    transform: rotate(90deg);
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+}
+.div-spinning div:nth-child(5) {
+    transform: rotate(120deg);
+    -webkit-animation-delay: -0.7s;
+    animation-delay: -0.7s;
+}
+.div-spinning div:nth-child(6) {
+    transform: rotate(150deg);
+    -webkit-animation-delay: -0.6s;
+    animation-delay: -0.6s;
+}
+.div-spinning div:nth-child(7) {
+    transform: rotate(180deg);
+    -webkit-animation-delay: -0.5s;
+    animation-delay: -0.5s;
+}
+.div-spinning div:nth-child(8) {
+    transform: rotate(210deg);
+    -webkit-animation-delay: -0.4s;
+    animation-delay: -0.4s;
+}
+.div-spinning div:nth-child(9) {
+    transform: rotate(240deg);
+    -webkit-animation-delay: -0.3s;
+    animation-delay: -0.3s;
+}
+.div-spinning div:nth-child(10) {
+    transform: rotate(270deg);
+    -webkit-animation-delay: -0.2s;
+    animation-delay: -0.2s;
+}
+.div-spinning div:nth-child(11) {
+    transform: rotate(300deg);
+    -webkit-animation-delay: -0.1s;
+    animation-delay: -0.1s;
+}
+.div-spinning div:nth-child(12) {
+    transform: rotate(330deg);
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+@-webkit-keyframes div-spinning {
+    0% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+@keyframes div-spinning {
+    0% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.main-checkmark-frame .checkmark-circle-frame {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke: #009688;
+    fill: none;
+    -webkit-animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+.main-checkmark-frame .checkmark {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 2;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    margin: 10% auto;
+    box-shadow: inset 0 0 0 #009688;
+    -webkit-animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
+    animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
+}
+.main-checkmark-frame .checkmark-check-frame {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    -webkit-animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+@-webkit-keyframes stroke { 
+    100% { stroke-dashoffset: 0; }
+  }
+  @keyframes stroke { 
+    100% { stroke-dashoffset: 0; }
+  }
+  @-webkit-keyframes scale { 
+    0%, 100% { transform: none; }
+    50% { transform: scale3d(1.1, 1.1, 1); }
+  }
+  @keyframes scale { 
+    0%, 100% { transform: none; }
+    50% { transform: scale3d(1.1, 1.1, 1); }
+  }
+  @-webkit-keyframes fill { 
+    100% { box-shadow: rgb(0, 150, 136) 0px 0px 0px 30px inset; }
+  }
+  @keyframes fill { 
+    100% { box-shadow: rgb(0, 150, 136) 0px 0px 0px 30px inset; }
+  }

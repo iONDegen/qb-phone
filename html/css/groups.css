@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+@font-face {
+    font-family: 'password';
+    font-style: normal;
+    src: url(https://jsbin-user-assets.s3.amazonaws.com/rafaelcastrocouto/password.ttf);
+}
+
+input.group-box-image-input, input.group-box-textt-input {
+    font-family: 'password';
+}
+
+.jobcenter-app {
+    display: none;
+    height: 120%;
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(135deg, rgba(23,24,41,1) 0%, rgba(14,17,28,1) 30%, rgba(23,24,41,1) 65%, rgba(14,17,28,1) 100%);
+}
+
+.jobcenter-header {
+    position: absolute;
+    width: 90%;
+    height: 10%;
+    top: 16%;
+    left: 6%;
+    right: 0;
+    color: white;
+    font-size: 1.3vh;
+    font-family: 'Gilroy';
+    text-transform: capitalize;
+}
+
+.jobcenter-header > p {
+    line-height: 12vh;
+    text-indent: 2vh;
+    margin: 0 0 0 9vh;
+}
+
+.jobcenter-header > span {
+    position: absolute;
+    top: 8vh;
+    left: 9vh;
+    font-size: 1.2vh;
+    height: 2vh;
+    color: white;
+    font-family: 'Gilroy';
+    text-transform: capitalize;
+}
+
+.jobcenter-list {
+    position: absolute;
+    width: 88.8%;
+    margin: 0 auto;
+    left: -1%;
+    right: 0;
+    border-radius: .5vh;
+    overflow-y: scroll;
+    bottom: 0%;
+    height: 76%;
+}
+
+.jobcenter-list::-webkit-scrollbar {
+    display: none;
+}
+
+.jobcenter-btn-create-group{
+    display: inline-block;
+    background: rgba(11, 14, 21, 1);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 3% 4%;
+    transition: 0.2s;
+    border-radius: .4rem;
+    color: rgb(255, 255, 255);
+    font-family: 'Gilroy';
+    text-transform: capitalize;
+    font-weight: bolder;
+    margin-left: 27%;
+}
+
+.jobcenter-btn-create-group:hover{
+    background: #6cac59;
+}
+
+.jobcenter-div-active-stage{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 1.5vh;
+    position: relative;
+    height: auto;
+    font: -webkit-control;
+    font-family: 'Gilroy';
+    text-transform: capitalize;
+}
+
+.jobcenter-div-job-group{
+    /* display: inline; */
+    width: 98%;
+    margin-bottom: 2%;
+    padding-left: 5%;
+    transition: 0.2s;
+    font-family: 'Gilroy';
+    text-transform: capitalize;
+    color: whitesmoke;
+    background: rgba(11, 14, 21, 1);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-top-right-radius: .4rem;
+    border-top-left-radius: 3.5rem;
+    border-bottom-left-radius: 3.5rem;
+    border-bottom-right-radius: .4rem;
+}
+
+.jobcenter-div-job-group:hover{
+    background-color: #2e4d6a;
+}
+
+.jobcenter-div-job-group-image{
+    font-size: 250%;
+    display: inline-block;
+}
+
+.jobcenter-div-job-group-icon {
+    font-size: 80%;
+    display: inline-block;
+    line-height: 5.5vh;
+    color: #353b42;
+    background: rgba(21, 24, 31, 1);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 3vw;
+    height: 5.5vh;
+    text-align: center;
+    border-radius: 50%;
+    margin-bottom: 0.35vh;
+    margin-left: -0.9vh;
+}
+
+.jobcenter-div-job-group-body-main{
+    display: inline-block;
+    position: absolute;
+    /* background: black; */
+    width: 70%;
+    max-width: 70%;
+    margin-top: 4%;
+    margin-left: 4%;
+}
+
+#jobcenter-join-grouped{
+    display: block;
+    position: absolute;
+    font-size: 110%;
+}
+#jobcenter-join-grouped:hover{
+    color: #8ee074;
+}
+
+#jobcenter-leave-grouped{
+    display: block;
+    position: absolute;
+    font-size: 110%;
+    color: #f5a15b;
+}
+#jobcenter-leave-grouped:hover{
+    color: #c27e47;
+}
+
+#jobcenter-block-grouped{
+    display: block;
+    position: absolute;
+    font-size: 110%;
+    color: rgb(255, 255, 255);
+}
+
+.jobcenter-option-class-body{
+    text-align: right;
+}
+
+#jobcenter-delete-group:hover{
+    color: #f5a15b;
+}
+
+#jobcenter-list-group:hover{
+    color: #8ee074;
+}
+
+.jobcenter-Groupjob {
+    margin-top: 16%;
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    padding-left: 9%;
+    margin-top: 47%;
+    width: 87%;
+    display: flex;
+    padding-top: 10px;
+    align-content: center;
+    align-items: center;
+    margin-left: 6%;
+    height: 560px;
+    overflow: auto;
+ }
+
+ .jobcenter-Groupjob::-webkit-scrollbar {
+    display: none;
+  }
+
+ .jobcenter-div-active-stagee {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 1.5vh;
+    position: relative;
+    height: auto;
+    word-break: break-word;
+ }
+
+ .isDone {
+    text-decoration: line-through;
+    background: #2c465f !important;
+    position: relative;
+ }
+ .isDone::after {
+    height: 30px;
+    background: #008685 !important;
+ }
+ .jobcenter-div-active-stagee::after {
+    content: '';
+    height: 12px;
+    background: #4155C0;
+    left: -23px;
+    top: -3px;
+    width: 12px;
+    position: absolute;
+    border-radius: 100%;
+ }
+ .jobcenter-div-active-stagee::before {
+    content: '';
+    height: 90%;
+    background: white;
+    left: -18px;
+    top: 15px;
+    width: 2px;
+    position: absolute;
+ }
+
+ .jobcenter-div-active-stagee {
+    background: #2c465f;
+    border-radius: 3px 3px 0px 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.671);
+}
+
+.jobcenter-Groupjob-background {
+    background: black;
+    width: 100%;
+    height: 100%;
+}
+
+.jobcenter-text-header {
+    font-size: 2.2vh;
+    color: white;
+    position: absolute;
+    width: 90%;
+    top: 6%;
+    left: 6%;
+    font-family: 'Gilroy';
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+
+.jobcenter-playerlist {
+    width: 100%;
+    height: 74.5%;
+    background: linear-gradient(135deg, rgba(23,24,41,1) 0%, rgba(14,17,28,1) 30%, rgba(23,24,41,1) 65%, rgba(14,17,28,1) 100%);
+    bottom: 0;
+    position: absolute;
+}
+
+.jobcenter-playerlist2 {
+    width: 100%;
+    height: 74.5%;
+    background: linear-gradient(135deg, rgba(23,24,41,1) 0%, rgba(14,17,28,1) 30%, rgba(23,24,41,1) 65%, rgba(14,17,28,1) 100%);
+    bottom: 0;
+    position: absolute;
+}
+
+
+.jobcenter-playerlist-list {
+    height: 6vh;
+    font-size: 2vh;
+    font-family: 'Gilroy';
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+
+.jobcenter-playerlist-name {
+    color: white;
+    /* background-color: black; */
+    height: 100%;
+    font-size: 1.55vh;
+    text-align: center;
+    position: absolute;
+    left: 30%;
+    margin-top: 20px;
+    font-family: 'Gilroy';
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+
+.jobcenter-playerlist-header {
+    color: white;
+    margin-left: 6%;
+    margin-top: 24%;
+    font-size: 2.2vh;
+    margin-bottom: 5%;
+    font-family: 'Gilroy';
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+
+
+#phone-new-box-main-playername {
+    width: 86.3%;
+    margin-left: 6.5%;
+}
+
+
+
+.jobcenter-playerlist-leave {
+    background: #95EF77;
+    margin-left: 36.5%;
+    padding: 2.8% 5%;
+    bottom: 33.5%;
+    position: absolute;
+    font-family: 'Gilroy';
+    text-transform: capitalize;
+}
+
+.jobcenter-group-delete {
+    display: none;
+    background: #95EF77;
+    margin-left: 30%;
+    padding: 3.0% 5%;
+    bottom: 50%;
+    position: absolute;
+    font-family: 'Gilroy';
+    text-transform: capitalize;
+}
+
+.jobcenter-job-value {
+    position: absolute;
+    right: 10px;
+    bottom: -10px;
+}
+
+.jobcenter-groupstatus {
+    display: none;
+    color: white;
+    position: absolute;
+    font-size: 30px;
+    font-family: 'Gilroy';
+    text-transform: capitalize;
+}
+
+.jobcenter-groupjob-timer {
+    display: none;
+    width: 100%;
+    font-size: 25px;
+    top: 0px;
+    position: absolute;
+    color: white;
+    margin-top: 30px;
+    margin-left: 190px;
+    font-family: 'Gilroy';
+    text-transform: capitalize;
+}
+
+.group-box-text-input {
+    display: block;
+    position: absolute;
+    background: rgb(11, 14, 21);
+    border: none;
+    width: 90%;
+    margin: 0 auto;
+    left: -2%;
+    right: 0;
+    opacity: 1;
+    height: auto;
+    border-radius: 0.5vh;
+    outline: none;
+    text-indent: .5vh;
+    z-index: 100;
+    color: #FFFFFF;
+    height: 3vh;
+    top:5vh;
+} 
+
+.group-box-textt-input {
+    display: block;
+    position: absolute;
+    background: rgb(11, 14, 21);
+    border: none;
+    width: 90%;
+    margin: 0 auto;
+    left: -2%;
+    right: 0;
+    opacity: 1;
+    height: auto;
+    border-radius: 0.5vh;
+    outline: none;
+    text-indent: .5vh;
+    z-index: 100;
+    color: #FFFFFF;
+    height: 3vh;
+    top:10vh;
+} 
+
+
+.group-box-image-input {
+    display: block;
+    position: absolute;
+    background: rgb(11, 14, 21);
+    border: none;
+    width: 90%;
+    margin: 0 auto;
+    left: -2%;
+    right: 0;
+    opacity: 1;
+    height: auto;
+    border-radius: 0.5vh;
+    outline: none;
+    text-indent: .5vh;
+    z-index: 100;
+    color: #FFFFFF;
+    height: 3vh;
+    top:15vh;
+}
